@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <!-- favicon pedido como sugerencia por el profe -->
+  <link rel="icon" type="image/ico" href="./favicon.ico" />
+
+  <!-- habilitar media queries y responsive design -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Normalizar = "resetear los browser specific styles" -->
+  <link rel="stylesheet" href="./CSS/1-normalize.css">
+
+  <!-- Formatos (colores, tamaños, etc) -->
+  <link rel="stylesheet" href="./CSS/2-styles.css">
+
+  <!-- las media queries que se vayan a considerar en el proyecto -->
+  <link rel="stylesheet" href="./CSS/3-layout-mobile.css">
+  <link rel="stylesheet" href="./CSS/4-layout-mobile-plus.css">
+  <link rel="stylesheet" href="./CSS/5-layout-tablet.css">
+  <link rel="stylesheet" href="./CSS/6-layout-pc.css">
+
+  <script src="./JS/productsData.js"></script>
+  <script src="./JS/Fhighestprice.js"></script>
+  <script src="./JS/FpaintProducts.js"></script>
+  <script src="./JS/FpaintFilters.js" defer></script>
+  <script src="./JS/FremoveFilters.js"></script>
+  <script src="./JS/FremoveProducts.js"></script>
+  <script src="./JS/main.js" defer></script>
+
+  <title>MP-P2-Filtros-RtC</title>
+</head>
+
+<body>
+  <aside class="filters">
+    <!-- filtro 1 -->
+    <section class="filter">
+      <p class="mobileInvisible"><strong>Filtro: </strong></p>
+      <p>elija la marca que le interesa</p>
+      <select name="mySelect" id="mySelect" class="mySelect">
+        <option value="" selected>Todas</option>
+      </select>
+    </section>
+
+    <!-- input box filter -->
+    <section class="filter">
+      <p class="mobileInvisible"><strong>Filtro:</strong></p>
+      <p>PRECIO máx?</p>
+      <input id="textInput" type="text" style="width: 50px;">
+      <!-- slidecontainer -->
+      <input id="slide" type="range" min="1" max="10000" value="10000" class="slider">
+      <input id="BTNfilter" type="button" value="Filtrar">
+    </section>
+    <!-- clean filters -->
+    <section class="filter">
+      <input type="button" value="Limpiar filtros" id="eliminateFilters">
+      <p class="mobileInvisible">(Para eliminar los filtros)</p>
+    </section>
+  </aside>
+
+  <main class="products">
+    <!-- inyectar js aqui -->
+  </main>
+</body>
+
+</html>

@@ -1,0 +1,94 @@
+function FpaintProducts(productsData) {
+
+  for (const product of productsData) {
+    const myDiv = document.createElement("div");
+    // let idProducto = productsData.idProducto;
+    // let discount = productsData.discount;
+    // let URLImage = productsData.URLImage;
+    // let envio_gratis = productsData.envio_gratis;
+    let nombre1 = productsData.nombre1;
+    console.log(productsData.nombre1);
+    // let marca = productsData.marca;
+    // let precio = productsData.precio;
+    // let PVPR = productsData.PVPR;
+    // let moneda = productsData.moneda;
+    // let nr_stars = productsData.nr_stars;
+    // let nr_reviews = productsData.nr_reviews;
+    // let patrocinado = productsData.patrocinado;
+    // let recibelo_manyana = productsData.recibelo_manyana;
+    // let seller = productsData.seller;
+    // let stock = productsData.stock;
+
+    let myHTML = `<ul>
+      <li>envio gratis: ${productsData.nombre1}</li>
+  </ul>`;
+
+    myDiv.innerHTML = myHTML;
+
+    const start = document.querySelector(".products");
+    start.append(myDiv);
+
+  }
+
+
+
+
+
+
+
+
+
+
+  // for (const product of productsData) {
+  //   console.log(
+  //     product["id-producto"], " \n",
+  //     product.discount
+
+  //   )
+  // }
+}
+
+// <div class="product">
+//   <p>Descuento:
+//     <span class="discount">-9%</span>
+//   </p>
+//   <p class="URLImage">
+//     <img class="image" src="./img/capturas/1252-realme-c55-8-256gb-rainy-night-libre.webp"
+//       alt="imagen del producto">
+//   </p>
+
+//   <p>Envio:
+//     <span class="free-shipping">Gratis</span>
+//   </p>
+
+//   <p class="patrocinado">Patrocinado</p>
+//   <p class="name1">OPPO A98 5G</p>
+//   <p class="name2">8/256GB Negro Libre</p>
+//   <p>PVPR:
+//     <span class="precio">348</span>
+//     <span>€</span>
+//   </p>
+
+//   <p>Precio:
+//     <span class="PVPR">385</span>
+//     <span>€</span>
+//   </p>
+
+//   <p class="nr_stars">
+//     <img class="starImage" src="./img/manually-put-together/valoracion-3.png" alt="foto de 3 estrellas">
+//   </p>
+
+//   <p>Nr Reviews:
+//     <span class="nr_reviews">7</span>
+//     <span>€</span>
+//   </p>
+
+//   <p class="patrocinado">Patrocinado</p>
+//   <p class="recibelo_manyana"></p>
+//   <p class="envio_gratis">Envío gratis</p>
+//   <p class="seller">PcComponentes</p>
+//   <p class="stock">140</p>
+// </div>
+
+//   </div >
+

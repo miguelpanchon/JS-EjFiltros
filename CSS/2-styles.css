@@ -1,0 +1,106 @@
+
+/* reset a mano para cumplir el enunciado (ya esta hecho en 1-normalize.css) */
+* {
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
+  list-style:none;
+  height:auto;
+  /* me fastidia la sección de categorías de instrumentos */
+}
+  
+/* CSS media queries & responsive web design tutorial for beginners dave gray*/
+
+ /* styles comunes a todos los media queries */
+ body {
+  /* min-height:100svh; */
+  display:flex;
+  flex-direction: row;
+  --fondoClarito:white;
+  --fondoClarito2:rgb(251, 239, 249);
+  --fondoClarito3:rgb(236, 176, 225);
+  --fondoClarito4:rgb(212, 196, 211);
+  --fondoOscuro: black;
+
+  --letraClarita: white;
+  --letraOscura: black;
+  --letraColor: orange;
+  --colorHover: rgb(253, 255, 125);
+  /* sugerencia del profe (Daniel) */
+  overflow-x: hidden; 
+  background-color:rgb(201, 221, 255);
+  height:fit-content;
+}
+
+.filters {
+  background-color:var(--fondoClarito3);
+  width: max(20svw, 300px);
+  flex-direction: column;
+  text-align: left;
+  border:var(--fondoOscuro) 3px solid;
+  padding: 5px;
+  margin:7px;
+  width: max(20svw, 300px);
+  flex-direction: column;
+  text-align: left;
+  height: fit-content;
+  }
+
+.filter {
+  background-color:var(--fondoClarito2);
+  margin: 10px;
+  padding:10px;
+  width: 210px;
+  height: fit-content;
+ }
+
+.products {
+  display:flex;
+  flex-direction:row;
+  text-align:center;
+  padding: 5px;
+  margin-right:10px;
+  margin-top:7px;
+  background-color:var(--fondoClarito3);
+  border:var(--fondoOscuro) 3px solid;
+  flex-wrap:wrap;
+  width: 80svw;
+  height: fit-content;
+ 
+  } 
+
+.product {
+  padding-top: 5px;
+  padding-left: 5px;
+  padding-right:5px;
+  margin: 6px;
+  height: 330px; 
+  background-color:var(--fondoClarito);
+  border-radius: 6% 6% 6% 6% / 6% 6% 6% 6%;
+  height: fit-content;
+ }
+
+ .product:hover {
+  background-color:var(--colorHover);
+ }
+
+.starImage {
+  height: 15px;
+}
+
+.image {
+  height:100px;
+}
+
+#slide {
+  margin:2px;
+}
+
+#textInput {
+  margin:6px;
+  margin-top:10px;
+}
+
+.mySelect {
+  margin-top: 10px;
+}

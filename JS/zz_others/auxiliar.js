@@ -1,0 +1,20 @@
+// https://www.freecodecamp.org/espanol/news/arreglos-de-objetos-en-javascript-actualizar/
+// esqueleto
+//{ "id-producto": ,
+// "discount": ,
+// "URL-image": "",
+//   "patrocinado":,
+// "envio_gratis":,
+// "nombre1": "",
+//   "nombre2": "",
+//     "precio":,
+// "PVPR":,
+// "moneda": "€",
+//   "nr_stars":,
+// "nr_reviews":,
+//"patrocinado":,
+// "recibelo_manyana":,
+//"envio_gratis":,
+// "seller": "PcComponentes",
+//   "stock":
+// },
